@@ -1,2 +1,2 @@
-# ui-bits
-Random UI bits.. just for practise
+# UI Bits
+Random UI bits made with HTML/CSS and JavaScript.
