@@ -1,0 +1,48 @@
+.tabs {
+  position: relative;
+  top: 40px;
+  display: block;
+  max-width: 480px;
+  margin: auto;
+  padding: 15px;
+  width: 80%;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 10px 10px #D3D3D3;
+}
+
+.tab-header-section {
+  position: absolute;
+  top: -30px;
+}
+
+.tab-content {
+  margin: 10px;
+}
+
+.tab-header {
+  padding: 10px;
+  background: #FFF;
+  text-decoration: none;
+  color: black;
+  margin: 0 5px 0 5px;
+}
+
+.tab-header.active {
+  border-bottom: 3px solid #F00;
+  transition: border-bottom 0.1s ease;
+}
+
+img {
+  max-width: 100%;
+}
+
+.visible {
+  display: block;
+  transition: display 0.35s ease;
+}
+
+.hidden {
+  display: none;
+  transition: display 0s ease;
+}
