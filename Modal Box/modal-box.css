@@ -8,6 +8,8 @@
   overflow: auto;
   background: rgba(0, 0, 0, 0.8);
   z-index: 99999;
+  animation-name: show;
+  animation-duration: 0.5s
 }
 
 .modal-content {
@@ -17,8 +19,6 @@
   border: 1px solid #888;
   width: 80%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  animation-name: show;
-  animation-duration: 0.5s
 }
 
 @keyframes show {
