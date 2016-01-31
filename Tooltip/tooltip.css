@@ -1,0 +1,39 @@
+#tooltip-demo {
+  text-align: center
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltiptext {
+  width: 100%;
+  padding: 5px;
+  background-color: #555;
+  color: #FFF;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  opacity: 0;
+  top: -175%;
+  left: -10%;
+  transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+/* Styles for the pointer below the tooltip */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
