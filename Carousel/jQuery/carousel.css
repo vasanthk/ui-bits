@@ -1,0 +1,67 @@
+/* Reference: http://jsfiddle.net/queryj/ha78T/ */
+.container {
+  margin: 10px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  width: 500px;
+  height: 240px;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  list-style: none;
+  padding: 0;
+/ / Remove default list item padding
+}
+
+.carousel li {
+  position: relative;
+/ / For positioning the caption display: block;
+  float: left;
+  width: 500px;
+  height: 240px;
+}
+
+.carousel img {
+  position: absolute;
+  z-index: 0;
+}
+
+.carousel p.text {
+  position: absolute;
+  z-index: 1;
+  font-size: 18px;
+  width: 340px;
+  right: 80px;
+  top: 10px;
+  color: #FF6347;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+}
+
+.carousel-nav a {
+  position: absolute;
+  display: block;
+  height: 40px;
+  width: 30px;
+  top: 50%;
+  text-align: center;
+  z-index: 10;
+  font-size: 24px;
+  line-height: 1.5;
+  font-weight: 800;
+  color: #222;
+  background-color: rgba(255, 99, 71, 0.7);
+  text-decoration: none;
+}
+
+.carousel-nav a.prev {
+  left: 0;
+}
+
+.carousel-nav a.next {
+  right: 0;
+}
