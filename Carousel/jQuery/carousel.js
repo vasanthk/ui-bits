@@ -20,7 +20,7 @@ $('.prev').on('click', function (e) {
   $carousel.animate({
     left: '+=' + slideWidth
   }, 300, function () {
-    if (Math.abs($carousel.position().left) < 2) {
+    if (Math.abs($carousel.position().left) === 0) {
       // If in slide 1 - which is 4 from the order 4-1-2-3-4-1
       // then shift position to 4 in end - 2;
       $carousel.css({
@@ -36,7 +36,7 @@ $('.next').on('click', function (e) {
   $carousel.animate({
     left: '-=' + slideWidth
   }, 300, function () {
-    if (Math.abs($carousel.position().left + slideWidth * ($carousel.children().length - 1)) < 2) {
+    if (Math.abs($carousel.position().left + slideWidth * ($carousel.children().length - 1)) === 0) {
       $carousel.css({
         left: -slideWidth
       });
