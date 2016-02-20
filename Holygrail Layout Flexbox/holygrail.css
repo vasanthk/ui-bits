@@ -1,0 +1,31 @@
+.holy-grail {
+  display: flex;
+  flex-direction: column;
+}
+
+.holy-grail__header {
+  flex: 0 0 100%;
+  text-align: center;
+  background-color: #F07850
+}
+
+.holy-grail__body {
+  display: flex;
+  flex-direction: row;
+}
+
+.holy-grail__sidebar {
+  flex: 1;
+}
+
+.holy-grail__content {
+  justify-content: flex-start;
+  flex: 4;
+  min-height: 100vh; /* to make footer stick to bottom */
+}
+
+.holy-grail__footer {
+  flex: 0 0 100%;
+  text-align: center;
+  background-color: #F07850
+}
